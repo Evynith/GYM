@@ -18,13 +18,20 @@ components: {
 }
 </script>
 
+<!-- En celular se vean 2 y 2 eventos -->
+
 <template>
-  <div id="novedades" class="px-16 h-[30vh] w-full flex flex-row flex-nowrap justify-between">
+  <div class="px-14 flex flex-row justify-between w-full">
+    <h3 class="font-bold text-3xl text-center text-yellow-400">Novedades</h3>
+    <a href="">Ver más</a>
+  </div>
+  <div id="novedades" class="px-8 h-full w-full flex flex-row flex-nowrap justify-between items-stretch">
     <Event
-      v-for="event in events"
-      :key="event.id"
-      :card-title="event.cardTitle"
-      :date="event.date"
+      v-for="(e, i) in events"
+      :key="e.id"
+      :card-title="e.cardTitle"
+      :date="e.date"
+      :class="i % 2 == 0 ? 'bg-gradient-to-tr from-slate-900 to-violet-900' : 'bg-gradient-to-br from-blue-500 to-slate-900'"
     />
   </div>
 </template>

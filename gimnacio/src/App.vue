@@ -5,12 +5,13 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <div>
-      <nav>
-        <a href="#inscripcion">Incríbete</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#novedades">Novedades</a>
-        <a href="#galeria">Galería</a>
-        <a href="#contacto">Contacto</a>
+      <img alt="Logo" src="@/assets/logo.png" class="absolute top-0 left-0  pl-14 pt-4 hidden" width="100" height="100" />
+      <nav class="flex flex-row justify-center w-full">
+        <a class="p-4" href="#inscripcion">Incríbete</a>
+        <a class="p-4" href="#nosotros">Nosotros</a>
+        <a class="p-4" href="#novedades">Novedades</a>
+        <a class="p-4" href="#galeria">Galería</a>
+        <a class="p-4" href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>

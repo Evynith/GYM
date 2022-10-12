@@ -12,6 +12,7 @@ import Contact from '@/components/Contact.vue';
     <HeaderCard/>
     <MainSite/>
     <ListEvent/>
+    <Gallery/>
     <Contact/>
   </main>
 </template>

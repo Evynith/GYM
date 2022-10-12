@@ -21,9 +21,9 @@ components: {
 
 <template>
     <div class="h-[80vh]">
-        <div class="h-1/5">
-            <h1>Gimnacio</h1>
-            <img alt="Vue logo" src="@/assets/logo.svg" width="25" height="25" />
+        <div class="h-1/5 px-14">
+          <img alt="Logo" src="@/assets/logo.png" width="100" height="100" />
+          <h1 class="font-bold uppercase text-xl text-yellow-400">Gimnacio XX</h1>
         </div>
         <div class="h-4/5 flex flex-row flex-nowrap">
             <CardDiscipline 
